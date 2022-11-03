@@ -8,12 +8,15 @@
     @vite('resources/js/app.js')
     <title>Dunne Decorating - @yield('title')</title>
 </head>
-<body>
-<main class="dark:bg-gray-800 font-mono bg-white relative overflow-hidden h-screen">
+<body class="dark:bg-gray-800">
+<main class="font-mono">
     @include('Layouts.header')
     <div class="flex relative z-20 items-center">
         @yield('content')
     </div>
 </main>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+
+@yield('scripts')
 </body>
 </html>

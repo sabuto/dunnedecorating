@@ -45,6 +45,10 @@ return [
             'local_domain' => env('MAIL_EHLO_DOMAIN'),
         ],
 
+        'office365mail' => [
+            'transport' => 'office365mail',
+        ],
+
         'ses' => [
             'transport' => 'ses',
         ],

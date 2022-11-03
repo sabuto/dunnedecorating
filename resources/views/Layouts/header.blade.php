@@ -36,7 +36,7 @@
                     <a href="{{route('portfolio')}}" class="py-2 px-6 flex hover:text-black">
                         Portfolio
                     </a>
-                    <a href="#" class="py-2 px-6 flex hover:text-black">
+                    <a href="{{route('quote')}}" class="py-2 px-6 flex hover:text-black">
                         Get a Quote
                     </a>
                 </nav>

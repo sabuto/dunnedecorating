@@ -18,4 +18,4 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', [RouteController::class, 'index']);
 Route::get('portfolio', [RouteController::class, 'portfolio'])->name('portfolio');
 Route::get('/quote', [RouteController::class, 'getQuote'])->name('quote');
-
+Route::post('/quote', [RouteController::class, 'postQuote'])->name('post-quote');

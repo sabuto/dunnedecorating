@@ -31,7 +31,7 @@ class RouteController extends Controller
 
     public function postQuote(Request $request)
     {
-        Mail::to('rob@dunnedecorating.co.uk')
+        Mail::to('dunnedecorating01@gmail.com')
             ->send(new QuoteRequested($request->email, $request->message, $request->name));
 
         session()->flash('success', 'Your quote will be on the way soon!');

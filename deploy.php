@@ -19,10 +19,3 @@ host('139.162.215.40')
 
 // Hooks
 after('deploy:failed', 'deploy:unlock');
-
-// Tasks
-desc('run yarn build prod');
-task('yarn:run:prod', function(){
-    cd('{{release_or_current_path}}');
-    run('yarn run build');
-});

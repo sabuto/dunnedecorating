@@ -28,8 +28,8 @@
                     Dunne Decorating
                 </a>
             </div>
-            <div class="flex items-center">
-                <nav class="font-sen text-gray-800 dark:text-white uppercase text-lg lg:flex items-center hidden">
+            <div class="flex items-center" x-data="{open : false}">
+                <nav :class="{'flex': open, 'hidden':!open}" class="font-sen text-gray-800 dark:text-white uppercase text-lg md:flex items-center">
                     <a href="/" class="py-2 px-6 flex hover:text-black">
                         Home
                     </a>
@@ -40,7 +40,7 @@
                         Get a Quote
                     </a>
                 </nav>
-                <button class="lg:hidden flex flex-col ml-4">
+                <button x-on:click="open = ! open" class="md:hidden flex flex-col ml-4">
                   <span class="w-6 h-1 bg-gray-800 dark:bg-white mb-1">
                   </span>
                     <span class="w-6 h-1 bg-gray-800 dark:bg-white mb-1">

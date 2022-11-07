@@ -29,7 +29,7 @@
                 </a>
             </div>
             <div class="flex items-center" x-data="{open : false}">
-                <nav :class="{'flex': open, 'hidden':!open}" class="font-sen text-gray-800 dark:text-white uppercase text-lg md:flex items-center">
+                <nav :class="{'flex': open, 'hidden':!open}" class="font-sen text-gray-800 dark:text-white uppercase text-xs md:text-lg md:flex items-center">
                     <a href="/" class="py-2 px-6 flex hover:text-black">
                         Home
                     </a>
